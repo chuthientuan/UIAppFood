@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="314dp"
+        android:layout_height="59dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email address"
+        android:layout_marginLeft="50dp"
+        android:textSize="17dp"/>
+    <EditText
+        android:layout_width="314dp"
+        android:layout_height="59dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginLeft="50dp"
+        android:textSize="17dp"
+        android:layout_marginTop="28dp"/>
+    <EditText
+        android:layout_width="314dp"
+        android:layout_height="59dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:layout_marginLeft="50dp"
+        android:textSize="17dp"
+        android:layout_marginTop="28dp"/>
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="314dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#FA4A0C"
+        android:text="Sign Up"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="600"
+        android:textSize="17dp"
+        android:lineHeight="20.29dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Already have an account? Login"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="600"
+        android:textSize="17dp"
+        android:lineHeight="20.29dp"
+        android:textColor="#FA4A0C"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

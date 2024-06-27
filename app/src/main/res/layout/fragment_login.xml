@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="314dp"
+        android:layout_height="59dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email address"
+        android:layout_marginLeft="50dp"
+        android:textSize="17dp"/>
+    <EditText
+        android:layout_width="314dp"
+        android:layout_height="59dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginLeft="50dp"
+        android:textSize="17dp"
+        android:layout_marginTop="46dp"/>
+    <TextView
+        android:layout_width="149dp"
+        android:layout_height="22dp"
+        android:text="Forgot passcode?"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="600"
+        android:textSize="17dp"
+        android:lineHeight="20.29dp"
+        android:textColor="#FA4A0C"
+        android:layout_marginTop="34dp"/>
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="314dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="136dp"
+        android:backgroundTint="#FA4A0C"
+        android:text="Login"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="600"
+        android:textSize="17dp"
+        android:lineHeight="20.29dp"/>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistoryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+        <Toolbar
+            android:id="@+id/btnback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:navigationIcon="@drawable/icon_back"/>
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="21dp"
+            android:text="History"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="600"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:lineHeight="21.48dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="106.5dp"
+        android:layout_height="118.33dp"
+        android:src="@drawable/icon_list"
+        android:layout_gravity="center"
+        android:layout_marginTop="188.92dp"/>
+    <TextView
+        android:layout_width="193dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:text="No history yet"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="600"
+        android:lineHeight="33.41dp"
+        android:layout_marginTop="26.75dp"
+        android:textAlignment="center"
+        android:textSize="28sp"/>
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Hit the orange button down
+below to Create an order"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="400"
+        android:textSize="17sp"
+        android:lineHeight="20.29dp"
+        android:textAlignment="center"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="314dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_30"
+        app:backgroundTint="@null"
+        android:text="Start odering"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="600"
+        android:textSize="17sp"
+        android:lineHeight="20.29dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:textColor="#F6F6F9"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/load"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bella_load"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Food for Everyone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="600"
+        android:textSize="10dp"
+        android:lineHeight="8.68dp"
+        android:letterSpacing="0.05"
+        android:textAlignment="center"
+        android:textColor="#FA4A0C"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_load"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420.08dp"/>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="270dp"
+    android:background="@drawable/view_itemfood"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="164.16dp"
+        android:layout_height="164.16dp"
+        android:src="@drawable/item_food1"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/texttt"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:text="Veggie tomato mix"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="600"
+        android:lineHeight="22.29dp"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/textpr"
+        android:layout_width="172dp"
+        android:layout_height="19dp"
+        android:text="N1,900"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="700"
+        android:textSize="17sp"
+        android:lineHeight="20.29dp"
+        android:textAlignment="center"
+        android:textColor="#FA4A0C"
+        android:layout_gravity="center"/>
+</LinearLayout>
