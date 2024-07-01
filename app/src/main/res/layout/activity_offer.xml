@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OfferActivity">
+
+    <Toolbar
+        android:id="@+id/icon_back_offer"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:navigationIcon="@drawable/icon_back"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="41dp"/>
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:text="My offers"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="500"
+        android:textSize="34sp"
+        android:lineHeight="51dp"
+        android:letterSpacing="-0.05"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="42dp"
+            android:text="ohh snap!  No offers yet"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="500"
+            android:textSize="28sp"
+            android:lineHeight="42dp"
+            android:letterSpacing="-0.02"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="233dp"
+            android:layout_height="52dp"
+            android:text="Bella dose’t have any offers
+yet please check again."
+            android:fontFamily="sans-serif"
+            android:textFontWeight="400"
+            android:textSize="17sp"
+            android:lineHeight="25.5dp"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

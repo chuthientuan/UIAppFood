@@ -45,6 +45,7 @@
             android:layout_marginTop="239dp"
             android:layout_marginLeft="38dp"/>
         <TextView
+            android:id="@+id/order"
             android:layout_width="57dp"
             android:layout_height="26dp"
             android:text="orders"
@@ -70,6 +71,7 @@
             android:layout_marginTop="319dp"
             android:layout_marginLeft="38dp"/>
         <TextView
+            android:id="@+id/offer"
             android:layout_width="141dp"
             android:layout_height="26dp"
             android:text="offer and promo"

@@ -3,6 +3,7 @@ package com.example.uiappfood;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MenuActivity extends AppCompatActivity {
-    TextView pro;
+    TextView pro, order, offer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,22 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myint = new Intent(MenuActivity.this, ProfileActivity.class);
+                startActivity(myint);
+            }
+        });
+        order = findViewById(R.id.order);
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myint = new Intent(MenuActivity.this, OrdersActivity.class);
+                startActivity(myint);
+            }
+        });
+        offer = findViewById(R.id.offer);
+        offer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myint = new Intent(MenuActivity.this, OfferActivity.class);
                 startActivity(myint);
             }
         });
