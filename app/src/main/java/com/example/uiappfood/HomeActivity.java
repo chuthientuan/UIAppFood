@@ -60,7 +60,7 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(myint);
                 }
                 else if (menuItem.getItemId()==R.id.user) {
-                    Intent my = new Intent(HomeActivity.this, ProfileActivity.class);
+                    Intent my = new Intent(HomeActivity.this, ProfileHomeActivity.class);
                     startActivity(my);
                 }
                 return false;

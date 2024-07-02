@@ -69,7 +69,7 @@
         android:layout_marginLeft="58dp"/>
     <TextView
         android:layout_width="151dp"
-        android:layout_height="21dp"
+        android:layout_height="wrap_content"
         android:text="Marvis Ighedosa"
         android:fontFamily="sans-serif"
         android:textFontWeight="600"
@@ -79,7 +79,7 @@
         android:layout_marginLeft="165dp"/>
     <TextView
         android:layout_width="252dp"
-        android:layout_height="18dp"
+        android:layout_height="19dp"
         android:text="Dosamarvis@gmail.com"
         android:fontFamily="sans-serif"
         android:textFontWeight="400"
