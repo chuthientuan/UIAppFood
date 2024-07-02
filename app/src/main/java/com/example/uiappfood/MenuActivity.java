@@ -49,5 +49,10 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(myint);
             }
         });
+        // Check Internet
+        if(!NetworkUtil.isNetworkAvailable(this)) {
+            Intent intent = new Intent(this, NoInternetActivity.class);
+            startActivity(intent);
+        }
     }
 }

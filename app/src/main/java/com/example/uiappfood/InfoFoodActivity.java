@@ -1,5 +1,6 @@
 package com.example.uiappfood;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -20,5 +21,10 @@ public class InfoFoodActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        // Check Internet
+        if(!NetworkUtil.isNetworkAvailable(this)) {
+            Intent intent = new Intent(this, NoInternetActivity.class);
+            startActivity(intent);
+        }
     }
 }

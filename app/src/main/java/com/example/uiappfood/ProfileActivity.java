@@ -1,4 +1,5 @@
 package com.example.uiappfood;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toolbar;
@@ -28,5 +29,10 @@ public class ProfileActivity extends AppCompatActivity {
                 finish();
             }
         });
+        // Check Internet
+        if(!NetworkUtil.isNetworkAvailable(this)) {
+            Intent intent = new Intent(this, NoInternetActivity.class);
+            startActivity(intent);
+        }
     }
 }

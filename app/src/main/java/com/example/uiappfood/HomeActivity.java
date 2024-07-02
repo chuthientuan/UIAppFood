@@ -66,5 +66,10 @@ public class HomeActivity extends AppCompatActivity {
                 return false;
             }
         });
+        // Check Internet
+        if(!NetworkUtil.isNetworkAvailable(this)) {
+            Intent intent = new Intent(this, NoInternetActivity.class);
+            startActivity(intent);
+        }
     }
 }

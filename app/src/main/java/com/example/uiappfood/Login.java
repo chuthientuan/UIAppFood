@@ -1,5 +1,6 @@
 package com.example.uiappfood;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,6 +48,12 @@ public class Login extends AppCompatActivity {
                 showIndicator(false);
             }
         });
+
+        // Check Internet
+        if(!NetworkUtil.isNetworkAvailable(this)) {
+            Intent intent = new Intent(this, NoInternetActivity.class);
+            startActivity(intent);
+        }
     }
     private void loadFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
