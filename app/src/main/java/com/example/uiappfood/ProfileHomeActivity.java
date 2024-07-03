@@ -38,19 +38,7 @@ public class ProfileHomeActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton radioButton = findViewById(checkedId);
-                if(radioButton != null) {
-                    String selected = radioButton.getText().toString();
-                    Toast.makeText(ProfileHomeActivity.this, "Selected: "+selected, Toast.LENGTH_SHORT).show();
-                }
             }
         });
-        int idselect = idgroup.getCheckedRadioButtonId();
-        if(idselect != -1) {
-            RadioButton radioButton = findViewById(idselect);
-            if(radioButton != null) {
-                String selectedText = radioButton.getText().toString();
-                Toast.makeText(this, "Initially selected: " + selectedText, Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 }

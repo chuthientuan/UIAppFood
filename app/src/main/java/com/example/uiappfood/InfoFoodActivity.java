@@ -16,7 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class InfoFoodActivity extends AppCompatActivity {
     ImageView imginfoitem;
     TextView nameitem, infoprice, infodelivery, policy;
-    Toolbar icon_back_item;
+    Toolbar icon_back_item, icon_heart_list;
+    Boolean click = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,20 @@ public class InfoFoodActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        icon_heart_list = findViewById(R.id.icon_heart_list);
+        icon_heart_list.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(click == true) {
+                    icon_heart_list.setNavigationIcon(R.drawable.icon_heart);
+                    click = false;
+                }
+                else {
+                    icon_heart_list.setNavigationIcon(R.drawable.icon_heart_item);
+                    click = true;
+                }
             }
         });
     }

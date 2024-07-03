@@ -17,7 +17,7 @@
             android:layout_height="24dp"
             android:src="@drawable/iconmn_profile"
             android:layout_marginTop="162dp"
-            android:layout_marginLeft="38dp"/>
+            android:layout_marginStart="38dp"/>
         <TextView
             android:id="@+id/pro"
             android:layout_width="54dp"
@@ -30,20 +30,20 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:layout_marginTop="161dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
         <View
             android:layout_width="132dp"
             android:layout_height="0.6dp"
             android:background="@drawable/line_menu"
             android:layout_marginTop="213dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
 
         <ImageView
             android:layout_width="26dp"
             android:layout_height="26dp"
             android:src="@drawable/iconmn_oder"
             android:layout_marginTop="239dp"
-            android:layout_marginLeft="38dp"/>
+            android:layout_marginStart="38dp"/>
         <TextView
             android:id="@+id/order"
             android:layout_width="57dp"
@@ -56,20 +56,20 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:layout_marginTop="239dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
         <View
             android:layout_width="132dp"
             android:layout_height="0.6dp"
             android:background="@drawable/line_menu"
             android:layout_marginTop="291dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/iconmn_other"
             android:layout_marginTop="319dp"
-            android:layout_marginLeft="38dp"/>
+            android:layout_marginStart="38dp"/>
         <TextView
             android:id="@+id/offer"
             android:layout_width="141dp"
@@ -82,20 +82,20 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:layout_marginTop="317dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
         <View
             android:layout_width="132dp"
             android:layout_height="0.6dp"
             android:background="@drawable/line_menu"
             android:layout_marginTop="369dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/iconmn_policy"
             android:layout_marginTop="397dp"
-            android:layout_marginLeft="38dp"/>
+            android:layout_marginStart="38dp"/>
         <TextView
             android:layout_width="121dp"
             android:layout_height="26dp"
@@ -107,20 +107,20 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:layout_marginTop="395dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
         <View
             android:layout_width="132dp"
             android:layout_height="0.6dp"
             android:background="@drawable/line_menu"
             android:layout_marginTop="447dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="19.2dp"
             android:src="@drawable/iconmn_secu"
             android:layout_marginTop="476dp"
-            android:layout_marginLeft="38dp"/>
+            android:layout_marginStart="38dp"/>
         <TextView
             android:layout_width="71dp"
             android:layout_height="26dp"
@@ -132,13 +132,13 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:layout_marginTop="473dp"
-            android:layout_marginLeft="74dp"/>
+            android:layout_marginStart="74dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="26dp"
             android:text="Sign-out ->"
             android:layout_marginTop="783dp"
-            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
             android:fontFamily="sans-serif"
             android:textFontWeight="600"
             android:textSize="17sp"
@@ -160,6 +160,6 @@
             android:layout_height="562.76dp"
             android:src="@drawable/img_menu"
             android:layout_marginTop="156.46dp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
     </RelativeLayout>
 </LinearLayout>

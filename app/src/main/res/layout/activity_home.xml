@@ -13,13 +13,13 @@
         android:layout_height="20dp"
         android:navigationIcon="@drawable/icon_menu"
         android:layout_marginTop="67dp"
-        android:layout_marginLeft="54.6dp"/>
+        android:layout_marginStart="54.6dp"/>
     <Toolbar
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:navigationIcon="@drawable/icon_cart"
         android:layout_marginTop="65dp"
-        android:layout_marginLeft="349dp"/>
+        android:layout_marginStart="349dp"/>
     <TextView
         android:layout_width="185dp"
         android:layout_height="82dp"
@@ -29,19 +29,19 @@
         android:lineHeight="40.57dp"
         android:textSize="34sp"
         android:layout_marginTop="132dp"
-        android:layout_marginLeft="50dp"/>
+        android:layout_marginStart="50dp"/>
     <EditText
         android:layout_width="314dp"
         android:layout_height="60dp"
         android:layout_marginTop="242dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:background="@drawable/search"
-        android:paddingLeft="40dp"
+        android:paddingStart="40dp"
         android:fontFamily="sans-serif"
         android:textFontWeight="600"
         android:textSize="17sp"
         android:lineHeight="20.29dp"
-        android:drawableLeft="@drawable/icon_search"
+        android:drawableStart="@drawable/icon_search"
         android:drawablePadding="10dp"
         android:hint="Search"/>
 
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         app:tabMode="scrollable"
         android:layout_marginTop="348dp"
-        android:layout_marginLeft="91dp"
+        android:layout_marginStart="91dp"
         android:background="#F2F2F2">
 
         <com.google.android.material.tabs.TabItem
@@ -77,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:orientation="horizontal"
         android:background="#F2F2F2"/>
     <TextView
@@ -90,7 +90,7 @@
         android:lineHeight="17.9dp"
         android:textColor="#FA4A0C"
         android:layout_marginTop="426dp"
-        android:layout_marginLeft="315dp"/>
+        android:layout_marginStart="315dp"/>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomnav"
         android:layout_width="match_parent"

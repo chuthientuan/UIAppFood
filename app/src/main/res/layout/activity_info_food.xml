@@ -18,12 +18,13 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:navigationIcon="@drawable/icon_back"
-            android:layout_marginLeft="41dp"/>
+            android:layout_marginStart="41dp"/>
         <Toolbar
+            android:id="@+id/icon_heart_list"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:navigationIcon="@drawable/icon_heart_item"
-            android:layout_marginLeft="340dp"/>
+            android:layout_marginStart="340dp"/>
     </RelativeLayout>
     <ImageView
         android:id="@+id/imginfoitem"

@@ -17,7 +17,7 @@
             android:id="@+id/icon_back_order"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
             android:navigationIcon="@drawable/icon_back"/>
         <TextView
             android:layout_width="61dp"

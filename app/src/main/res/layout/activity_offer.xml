@@ -15,7 +15,7 @@
         android:layout_height="24dp"
         android:navigationIcon="@drawable/icon_back"
         android:layout_marginTop="60dp"
-        android:layout_marginLeft="41dp"/>
+        android:layout_marginStart="41dp"/>
     <TextView
         android:layout_width="145dp"
         android:layout_height="51dp"
@@ -25,7 +25,7 @@
         android:textSize="34sp"
         android:lineHeight="51dp"
         android:letterSpacing="-0.05"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"/>
     <LinearLayout
         android:layout_width="match_parent"
