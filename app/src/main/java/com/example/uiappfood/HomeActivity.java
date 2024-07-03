@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
         list = new ArrayList<>();
         list.add(new Item_food(R.drawable.item_food1, "Veggie tomato mix", "N1,900"));
         list.add(new Item_food(R.drawable.item_food2, "Spicy fish sauce", "N2,300.99"));
-        adp = new AdapterFood(list);
+        adp = new AdapterFood(list, this);
         reclefood.setAdapter(adp);
         menu = findViewById(R.id.menu);
         menu.setOnClickListener(new View.OnClickListener() {

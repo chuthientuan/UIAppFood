@@ -1,5 +1,7 @@
 package com.example.uiappfood;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,9 +15,11 @@ import java.util.List;
 
 public class AdapterFood extends RecyclerView.Adapter<AdapterFood.ViewHolder> {
     private List<Item_food> list;
+    private Activity activity;
 
-    public AdapterFood(List<Item_food> list) {
+    public AdapterFood(List<Item_food> list, Activity activity) {
         this.list = list;
+        this.activity = activity;
     }
 
     @NonNull
@@ -32,6 +36,17 @@ public class AdapterFood extends RecyclerView.Adapter<AdapterFood.ViewHolder> {
         holder.imageView.setImageResource(item.getImg());
         holder.texttt.setText(item.getTitle());
         holder.textpr.setText(item.getPrice());
+        // Click
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity, InfoFoodActivity.class);
+                intent.putExtra("item_img", item.getImg());
+                intent.putExtra("item_name", item.getTitle());
+                intent.putExtra("item_price", item.getPrice());
+                activity.startActivity(intent);
+            }
+        });
     }
 
     @Override

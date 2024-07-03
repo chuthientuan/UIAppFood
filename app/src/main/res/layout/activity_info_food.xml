@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp">
         <Toolbar
+            android:id="@+id/icon_back_item"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:navigationIcon="@drawable/icon_back"
@@ -28,6 +29,7 @@
         android:id="@+id/imginfoitem"
         android:layout_width="241.21dp"
         android:layout_height="241.21dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/img_info_item"
         android:layout_gravity="center"/>
     <TextView
@@ -62,9 +64,11 @@
         android:textFontWeight="600"
         android:textSize="17sp"
         android:lineHeight="20.29dp"
+        android:layout_marginTop="40dp"
         android:textColor="#000000"
         android:layout_marginStart="53dp"/>
     <TextView
+        android:id="@+id/infodelivery"
         android:layout_width="297dp"
         android:layout_height="77dp"
         android:text="Delivered between monday aug and thursday 20 from 8pm to 91:32 pm"
@@ -86,6 +90,7 @@
         android:textColor="#000000"
         android:layout_marginStart="53dp"/>
     <TextView
+        android:id="@+id/policy"
         android:layout_width="297dp"
         android:layout_height="wrap_content"
         android:text="All our foods are double checked before leaving our stores so by any case you found a broken food please contact our hotline immediately."
@@ -96,17 +101,24 @@
         android:textColor="#000000"
         android:letterSpacing="0.02"
         android:layout_gravity="center"/>
-    <Button
-        android:layout_width="314dp"
-        android:layout_height="70dp"
-        android:background="@drawable/btn_30"
-        app:backgroundTint="@null"
-        android:text="Add to cart"
-        android:fontFamily="sans-serif"
-        android:textFontWeight="600"
-        android:textSize="17sp"
-        android:lineHeight="20.29dp"
-        android:textColor="#F6F6F9"
-        android:layout_gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <Button
+            android:layout_width="314dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_30"
+            app:backgroundTint="@null"
+            android:text="Add to cart"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="600"
+            android:layout_centerInParent="true"
+            android:textSize="17sp"
+            android:lineHeight="20.29dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#F6F6F9"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
 
 </LinearLayout>
