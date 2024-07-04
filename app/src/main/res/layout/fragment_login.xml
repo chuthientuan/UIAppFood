@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <EditText
+        android:id="@+id/editemail"
         android:layout_width="314dp"
         android:layout_height="59dp"
         android:inputType="textEmailAddress"
@@ -11,6 +12,7 @@
         android:layout_marginStart="50dp"
         android:textSize="17dp"/>
     <EditText
+        android:id="@+id/editpassword"
         android:layout_width="314dp"
         android:layout_height="59dp"
         android:inputType="textPassword"

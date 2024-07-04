@@ -41,6 +41,9 @@ public class HomeActivity extends AppCompatActivity {
         list = new ArrayList<>();
         list.add(new Item_food(R.drawable.item_food1, "Veggie tomato mix", "N1,900"));
         list.add(new Item_food(R.drawable.item_food2, "Spicy fish sauce", "N2,300.99"));
+        list.add(new Item_food(R.drawable.img_food_chicken, "Fried chicken", "N1,900"));
+        list.add(new Item_food(R.drawable.img_food_egg, "Egg and cucmber", "N1,900"));
+        list.add(new Item_food(R.drawable.img_food3, "Moi-moi and ekpa", "N1,900"));
         adp = new AdapterFood(list, this);
         reclefood.setAdapter(adp);
         menu = findViewById(R.id.menu);

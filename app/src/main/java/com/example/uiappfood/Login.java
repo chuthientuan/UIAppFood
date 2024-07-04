@@ -17,6 +17,9 @@ import androidx.fragment.app.FragmentTransaction;
 public class Login extends AppCompatActivity {
     LinearLayout tabLogin, tabSignup;
     private View indicatorLogin, indicatorSignup;
+    private LoginFragment loginFragment;
+    DatabaseHelper db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,13 +51,13 @@ public class Login extends AppCompatActivity {
                 showIndicator(false);
             }
         });
-
         // Check Internet
-        if(!NetworkUtil.isNetworkAvailable(this)) {
+        if (!NetworkUtil.isNetworkAvailable(this)) {
             Intent intent = new Intent(this, NoInternetActivity.class);
             startActivity(intent);
         }
     }
+
     private void loadFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, fragment);
@@ -69,5 +72,23 @@ public class Login extends AppCompatActivity {
             indicatorLogin.setVisibility(View.GONE);
             indicatorSignup.setVisibility(View.VISIBLE);
         }
+    }
+
+    private void setlogin() {
+        db = new DatabaseHelper(this);
+        loginFragment.editemail = findViewById(R.id.editemail);
+        loginFragment.editpassword = findViewById(R.id.editpassword);
+        loginFragment.btnlogin = findViewById(R.id.btnlogin);
+        loginFragment.btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = loginFragment.editemail.getText().toString();
+                String password = loginFragment.editpassword.getText().toString();
+                boolean ischeck = db.checkUse(email, password);
+                if (ischeck) {
+
+                }
+            }
+        });
     }
 }
