@@ -46,4 +46,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 });
                 return cursor.getCount() > 0;
         }
+
+        public String getEmail() {
+                SQLiteDatabase db = this.getReadableDatabase();
+                Cursor cursor = null;
+                String email = null;
+                try {
+                        cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+                        if (cursor != null && cursor.moveToFirst()) {
+                                email = cursor.getString(cursor.getColumnIndexOrThrow(COL_2));// Adjust "email" to the actual column name
+                        }
+                } catch (Exception e) {
+                        e.printStackTrace();
+                } finally {
+                        if (cursor != null) {
+                                cursor.close();
+                        }
+                }
+                return email;
+        }
 }
