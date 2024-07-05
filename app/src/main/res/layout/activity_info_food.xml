@@ -21,8 +21,8 @@
             android:layout_marginStart="41dp"/>
         <Toolbar
             android:id="@+id/icon_heart_list"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:navigationIcon="@drawable/icon_heart_item"
             android:layout_marginStart="340dp"/>
     </RelativeLayout>

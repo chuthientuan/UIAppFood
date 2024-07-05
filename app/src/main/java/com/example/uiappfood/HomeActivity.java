@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
-    Toolbar menu;
+    Toolbar menu, cart;
     RecyclerView reclefood;
     AdapterFood adp;
     List<Item_food> list;
@@ -59,6 +59,11 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(my);
             }
             return false;
+        });
+        cart = findViewById(R.id.cart);
+        cart.setOnClickListener(v -> {
+            Intent myint = new Intent(HomeActivity.this, OrdersActivity.class);
+            startActivity(myint);
         });
         // Check Internet
         if(!NetworkUtil.isNetworkAvailable(this)) {

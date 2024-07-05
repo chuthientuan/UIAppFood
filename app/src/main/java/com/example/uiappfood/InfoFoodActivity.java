@@ -52,7 +52,7 @@ public class InfoFoodActivity extends AppCompatActivity {
         icon_heart_list = findViewById(R.id.icon_heart_list);
         icon_heart_list.setNavigationOnClickListener(v -> {
             if(click) {
-                icon_heart_list.setNavigationIcon(R.drawable.icon_heart);
+                icon_heart_list.setNavigationIcon(R.drawable.icon_heart_bold);
                 click = false;
             }
             else {
