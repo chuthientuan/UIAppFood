@@ -1,10 +1,8 @@
 package com.example.uiappfood;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -27,18 +25,10 @@ public class ProfileHomeActivity extends AppCompatActivity {
             return insets;
         });
         usback = findViewById(R.id.usback);
-        usback.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        usback.setNavigationOnClickListener(v -> finish());
         idgroup = findViewById(R.id.idgroup);
-        idgroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton radioButton = findViewById(checkedId);
-            }
+        idgroup.setOnCheckedChangeListener((group, checkedId) -> {
+            RadioButton radioButton = findViewById(checkedId);
         });
     }
 }

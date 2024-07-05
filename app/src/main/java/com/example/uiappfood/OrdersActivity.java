@@ -2,7 +2,6 @@ package com.example.uiappfood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -24,12 +23,7 @@ public class OrdersActivity extends AppCompatActivity {
             return insets;
         });
         icon_back_order = findViewById(R.id.icon_back_order);
-        icon_back_order.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        icon_back_order.setNavigationOnClickListener(v -> finish());
         // Check Internet
         if(!NetworkUtil.isNetworkAvailable(this)) {
             Intent intent = new Intent(this, NoInternetActivity.class);

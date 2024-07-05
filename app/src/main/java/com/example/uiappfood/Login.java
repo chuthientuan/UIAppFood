@@ -3,9 +3,7 @@ package com.example.uiappfood;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,20 +34,15 @@ public class Login extends AppCompatActivity {
         // Load LoginFragment by default
         loadFragment(new LoginFragment());
         showIndicator(true);
-        tabLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadFragment(new LoginFragment());
-                showIndicator(true);
-            }
+        tabLogin.setOnClickListener(v -> {
+            loadFragment(new LoginFragment());
+            showIndicator(true);
         });
-        tabSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadFragment(new SignUpFragment());
-                showIndicator(false);
-            }
+        tabSignup.setOnClickListener(v -> {
+            loadFragment(new SignUpFragment());
+            showIndicator(false);
         });
+
         // Check Internet
         if (!NetworkUtil.isNetworkAvailable(this)) {
             Intent intent = new Intent(this, NoInternetActivity.class);
@@ -57,13 +50,13 @@ public class Login extends AppCompatActivity {
         }
     }
 
-    private void loadFragment(Fragment fragment) {
+    public void loadFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, fragment);
         transaction.commit();
     }
 
-    private void showIndicator(boolean isLoginSelected) {
+    public void showIndicator(boolean isLoginSelected) {
         if (isLoginSelected) {
             indicatorLogin.setVisibility(View.VISIBLE);
             indicatorSignup.setVisibility(View.GONE);

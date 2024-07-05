@@ -10,7 +10,7 @@
         android:inputType="textEmailAddress"
         android:hint="Email address"
         android:layout_marginStart="50dp"
-        android:textSize="17dp"/>
+        android:textSize="17sp"/>
     <EditText
         android:id="@+id/editsignpassword"
         android:layout_width="314dp"
@@ -18,7 +18,7 @@
         android:inputType="textPassword"
         android:hint="Password"
         android:layout_marginStart="50dp"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:layout_marginTop="28dp"/>
     <EditText
         android:id="@+id/editsignconfirmpassword"
@@ -27,7 +27,7 @@
         android:inputType="textPassword"
         android:hint="Confirm Password"
         android:layout_marginStart="50dp"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:layout_marginTop="28dp"/>
     <Button
         android:id="@+id/btnsignup"
@@ -39,15 +39,16 @@
         android:text="Sign Up"
         android:fontFamily="sans-serif"
         android:textFontWeight="600"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:lineHeight="20.29dp"/>
     <TextView
+        android:id="@+id/haveaccount"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:text="Already have an account? Login"
         android:fontFamily="sans-serif"
         android:textFontWeight="600"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:lineHeight="20.29dp"
         android:textColor="#FA4A0C"
         android:layout_gravity="center"

@@ -2,7 +2,6 @@ package com.example.uiappfood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toolbar;
@@ -49,24 +48,16 @@ public class InfoFoodActivity extends AppCompatActivity {
         infoprice.setText(price);
         //
         icon_back_item = findViewById(R.id.icon_back_item);
-        icon_back_item.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        icon_back_item.setNavigationOnClickListener(v -> finish());
         icon_heart_list = findViewById(R.id.icon_heart_list);
-        icon_heart_list.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(click == true) {
-                    icon_heart_list.setNavigationIcon(R.drawable.icon_heart);
-                    click = false;
-                }
-                else {
-                    icon_heart_list.setNavigationIcon(R.drawable.icon_heart_item);
-                    click = true;
-                }
+        icon_heart_list.setNavigationOnClickListener(v -> {
+            if(click) {
+                icon_heart_list.setNavigationIcon(R.drawable.icon_heart);
+                click = false;
+            }
+            else {
+                icon_heart_list.setNavigationIcon(R.drawable.icon_heart_item);
+                click = true;
             }
         });
     }

@@ -2,13 +2,10 @@ package com.example.uiappfood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -26,12 +23,9 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         btnstart = findViewById(R.id.btnstart);
-        btnstart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myint = new Intent(MainActivity.this, Login.class);
-                startActivity(myint);
-            }
+        btnstart.setOnClickListener(v -> {
+            Intent myint = new Intent(MainActivity.this, Login.class);
+            startActivity(myint);
         });
     }
 }

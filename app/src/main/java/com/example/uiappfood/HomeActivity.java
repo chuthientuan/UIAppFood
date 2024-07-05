@@ -2,12 +2,9 @@ package com.example.uiappfood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -47,27 +44,21 @@ public class HomeActivity extends AppCompatActivity {
         adp = new AdapterFood(list, this);
         reclefood.setAdapter(adp);
         menu = findViewById(R.id.menu);
-        menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myint = new Intent(HomeActivity.this, MenuActivity.class);
-                startActivity(myint);
-            }
+        menu.setOnClickListener(v -> {
+            Intent myint = new Intent(HomeActivity.this, MenuActivity.class);
+            startActivity(myint);
         });
         bottomnav = findViewById(R.id.bottomnav);
-        bottomnav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                if(menuItem.getItemId()==R.id.history) {
-                    Intent myint = new Intent(HomeActivity.this, HistoryActivity.class);
-                    startActivity(myint);
-                }
-                else if (menuItem.getItemId()==R.id.user) {
-                    Intent my = new Intent(HomeActivity.this, ProfileHomeActivity.class);
-                    startActivity(my);
-                }
-                return false;
+        bottomnav.setOnNavigationItemSelectedListener(menuItem -> {
+            if(menuItem.getItemId()==R.id.history) {
+                Intent myint = new Intent(HomeActivity.this, HistoryActivity.class);
+                startActivity(myint);
             }
+            else if (menuItem.getItemId()==R.id.user) {
+                Intent my = new Intent(HomeActivity.this, ProfileHomeActivity.class);
+                startActivity(my);
+            }
+            return false;
         });
         // Check Internet
         if(!NetworkUtil.isNetworkAvailable(this)) {

@@ -2,7 +2,6 @@ package com.example.uiappfood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -24,12 +23,7 @@ public class OfferActivity extends AppCompatActivity {
             return insets;
         });
         icon_back_offer = findViewById(R.id.icon_back_offer);
-        icon_back_offer.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        icon_back_offer.setNavigationOnClickListener(v -> finish());
         // Check Internet
         if(!NetworkUtil.isNetworkAvailable(this)) {
             Intent intent = new Intent(this, NoInternetActivity.class);

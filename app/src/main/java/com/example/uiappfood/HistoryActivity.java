@@ -2,7 +2,6 @@ package com.example.uiappfood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -24,12 +23,7 @@ public class HistoryActivity extends AppCompatActivity {
             return insets;
         });
         btnback = findViewById(R.id.btnback);
-        btnback.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        btnback.setNavigationOnClickListener(v -> finish());
         // Check Internet
         if(!NetworkUtil.isNetworkAvailable(this)) {
             Intent intent = new Intent(this, NoInternetActivity.class);

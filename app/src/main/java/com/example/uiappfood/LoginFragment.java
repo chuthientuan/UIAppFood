@@ -30,20 +30,17 @@ public class LoginFragment extends Fragment {
         editemail = view.findViewById(R.id.editemail);
         editpassword = view.findViewById(R.id.editpassword);
         btnlogin = view.findViewById(R.id.btnlogin);
-        btnlogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String email = editemail.getText().toString();
-                String password = editpassword.getText().toString();
-                boolean ischeck = db.checkUse(email, password);
-                if (ischeck) {
-                    Toast.makeText(getActivity(), "Login success", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getActivity(), HomeActivity.class);
-                    startActivity(intent);
-                }
-                else {
-                    Toast.makeText(getActivity(), "Invalid Credentials", Toast.LENGTH_SHORT).show();
-                }
+        btnlogin.setOnClickListener(v -> {
+            String email = editemail.getText().toString();
+            String password = editpassword.getText().toString();
+            boolean ischeck = db.checkUse(email, password);
+            if (ischeck) {
+                Toast.makeText(getActivity(), "Login success", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), HomeActivity.class);
+                startActivity(intent);
+            }
+            else {
+                Toast.makeText(getActivity(), "Invalid Credentials", Toast.LENGTH_SHORT).show();
             }
         });
     }

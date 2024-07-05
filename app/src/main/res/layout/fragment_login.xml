@@ -10,7 +10,7 @@
         android:inputType="textEmailAddress"
         android:hint="Email address"
         android:layout_marginStart="50dp"
-        android:textSize="17dp"/>
+        android:textSize="17sp"/>
     <EditText
         android:id="@+id/editpassword"
         android:layout_width="314dp"
@@ -18,7 +18,7 @@
         android:inputType="textPassword"
         android:hint="Password"
         android:layout_marginStart="50dp"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:layout_marginTop="46dp"/>
     <TextView
         android:layout_width="149dp"
@@ -27,7 +27,7 @@
         android:layout_marginStart="50dp"
         android:fontFamily="sans-serif"
         android:textFontWeight="600"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:lineHeight="20.29dp"
         android:textColor="#FA4A0C"
         android:layout_marginTop="34dp"/>
@@ -41,6 +41,6 @@
         android:text="Login"
         android:fontFamily="sans-serif"
         android:textFontWeight="600"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:lineHeight="20.29dp"/>
 </LinearLayout>

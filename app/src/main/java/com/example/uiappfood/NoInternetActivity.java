@@ -1,7 +1,6 @@
 package com.example.uiappfood;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -23,12 +22,9 @@ public class NoInternetActivity extends AppCompatActivity {
             return insets;
         });
         tryinternet = findViewById(R.id.tryinternet);
-        tryinternet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(NetworkUtil.isNetworkAvailable(NoInternetActivity.this)) {
-                    finish();
-                }
+        tryinternet.setOnClickListener(v -> {
+            if(NetworkUtil.isNetworkAvailable(NoInternetActivity.this)) {
+                finish();
             }
         });
     }
