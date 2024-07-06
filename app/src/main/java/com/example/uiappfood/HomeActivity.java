@@ -54,6 +54,10 @@ public class HomeActivity extends AppCompatActivity {
                 Intent myint = new Intent(HomeActivity.this, HistoryActivity.class);
                 startActivity(myint);
             }
+            else if (menuItem.getItemId()==R.id.nav_favorites) {
+                Intent myint = new Intent(HomeActivity.this, FavoritesListActivity.class);
+                startActivity(myint);
+            }
             else if (menuItem.getItemId()==R.id.user) {
                 Intent my = new Intent(HomeActivity.this, ProfileHomeActivity.class);
                 startActivity(my);

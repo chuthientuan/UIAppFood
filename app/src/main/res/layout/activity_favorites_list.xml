@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp">
         <Toolbar
+            android:id="@+id/icon_back_item"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:navigationIcon="@drawable/icon_back"
@@ -30,6 +31,7 @@
     </RelativeLayout>
 
     <ListView
+        android:id="@+id/listviewfavorite"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"/>

@@ -12,15 +12,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class InfoFoodActivity extends AppCompatActivity {
     ImageView imginfoitem;
     TextView nameitem, infoprice, infodelivery, policy;
     Toolbar icon_back_item, icon_heart_list;
     Boolean click = true;
-    ArrayList<Itemheartfood> list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,17 +53,22 @@ public class InfoFoodActivity extends AppCompatActivity {
         icon_heart_list.setNavigationOnClickListener(v -> {
             if(click) {
                 icon_heart_list.setNavigationIcon(R.drawable.icon_heart_bold);
+                Intent intent = new Intent();
+                Bundle bundle = new Bundle();
+                int imgfood = imginfoitem.getDrawable().getConstantState().getChangingConfigurations();
+                String namefood = nameitem.getText().toString();
+                String pricefood = nameitem.getText().toString();
+                bundle.putInt("imgfood", imgfood);
+                bundle.putString("namefood", namefood);
+                bundle.putString("pricefood", pricefood);
+                intent.putExtras(bundle);
+                setResult(RESULT_OK, intent);
                 click = false;
             }
             else {
                 icon_heart_list.setNavigationIcon(R.drawable.icon_heart_item);
                 click = true;
             }
-            int imgfood = imginfoitem.getDrawable().getConstantState().getChangingConfigurations();
-            String namefood = nameitem.getText().toString();
-            String pricefood = nameitem.getText().toString();
-            list = new ArrayList<>();
-            list.add(new Itemheartfood(img, name, price));
         });
     }
 }
