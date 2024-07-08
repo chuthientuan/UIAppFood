@@ -21,14 +21,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/bella_load"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="230dp"
         android:layout_centerHorizontal="true"/>
     <TextView
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Food for Everyone"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="410dp"
         android:fontFamily="sans-serif"
         android:textFontWeight="600"
         android:textSize="10dp"
@@ -36,10 +36,4 @@
         android:letterSpacing="0.05"
         android:textAlignment="center"
         android:textColor="#FA4A0C"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icon_load"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="420.08dp"/>
 </RelativeLayout>

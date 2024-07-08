@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -37,6 +39,7 @@ public class AdapterHeart extends ArrayAdapter<Itemheartfood> {
         editname.setText(item.getName());
         TextView editprice = convertView.findViewById(R.id.editprice);
         editprice.setText(item.getPrice());
+        convertView.setLayoutParams(new ListView.LayoutParams(AbsListView.LayoutParams.MATCH_PARENT, 300));
         return convertView;
     }
 }
