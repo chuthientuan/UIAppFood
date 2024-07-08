@@ -53,16 +53,8 @@ public class InfoFoodActivity extends AppCompatActivity {
         icon_heart_list.setNavigationOnClickListener(v -> {
             if(click) {
                 icon_heart_list.setNavigationIcon(R.drawable.icon_heart_bold);
-                Intent intent = new Intent();
-                Bundle bundle = new Bundle();
-                int imgfood = imginfoitem.getDrawable().getConstantState().getChangingConfigurations();
-                String namefood = nameitem.getText().toString();
-                String pricefood = nameitem.getText().toString();
-                bundle.putInt("imgfood", imgfood);
-                bundle.putString("namefood", namefood);
-                bundle.putString("pricefood", pricefood);
-                intent.putExtras(bundle);
-                setResult(RESULT_OK, intent);
+                Itemheartfood item = new Itemheartfood(img, name, price);
+                FavoritesManager.getInstance().addFavorite(item);
                 click = false;
             }
             else {

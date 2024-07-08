@@ -11,14 +11,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class AdapterHeart extends ArrayAdapter<Itemheartfood> {
     Activity activity;
     int idlayout;
-    ArrayList<Itemheartfood> list;
+    List<Itemheartfood> list;
 
-    public AdapterHeart(Activity activity, int idlayout, ArrayList<Itemheartfood> list) {
+    public AdapterHeart(Activity activity, int idlayout, List<Itemheartfood> list) {
         super(activity, idlayout, list);
         this.activity = activity;
         this.idlayout = idlayout;
