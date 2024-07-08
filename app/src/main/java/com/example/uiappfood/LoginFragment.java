@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,7 @@ import androidx.fragment.app.Fragment;
 public class LoginFragment extends Fragment {
     public Button btnlogin;
     public EditText editemail, editpassword;
+    TextView forgot;
     DatabaseHelper db;
     @Nullable
     @Override
@@ -42,6 +44,11 @@ public class LoginFragment extends Fragment {
             else {
                 Toast.makeText(getActivity(), "Invalid Credentials", Toast.LENGTH_SHORT).show();
             }
+        });
+        forgot = view.findViewById(R.id.forgot);
+        forgot.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), ForgotPasswordActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -243,12 +243,10 @@
             app:backgroundTint="@null"
             android:text="Updatet"
             android:fontFamily="sans-serif"
-            android:textFontWeight="600"
+            android:textStyle="bold"
             android:layout_centerInParent="true"
             android:textSize="17sp"
-            android:lineHeight="20.29dp"
-            android:textColor="#F6F6F9"
-            android:layout_gravity="center"/>
+            android:textColor="#F6F6F9"/>
     </RelativeLayout>
 
 </LinearLayout>

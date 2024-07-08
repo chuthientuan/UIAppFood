@@ -21,9 +21,10 @@
         android:textSize="17sp"
         android:layout_marginTop="46dp"/>
     <TextView
+        android:id="@+id/forgot"
         android:layout_width="149dp"
         android:layout_height="22dp"
-        android:text="Forgot passcode?"
+        android:text="Forgot password?"
         android:layout_marginStart="50dp"
         android:fontFamily="sans-serif"
         android:textFontWeight="600"
