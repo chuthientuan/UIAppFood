@@ -2,6 +2,7 @@ package com.example.uiappfood;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +24,8 @@ public class HomeActivity extends AppCompatActivity {
     AdapterFood adp;
     List<Item_food> list;
     BottomNavigationView bottomnav;
+    private long backpressTime = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,5 +77,17 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(this, NoInternetActivity.class);
             startActivity(intent);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (backpressTime + 2000 > System.currentTimeMillis()) {
+            super.onBackPressed();
+            return;
+        }
+        else {
+            Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show();
+        }
+        backpressTime = System.currentTimeMillis();
     }
 }

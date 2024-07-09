@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class Login extends AppCompatActivity {
     LinearLayout tabLogin, tabSignup;
     private View indicatorLogin, indicatorSignup;
+    private long backpressTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,5 +66,17 @@ public class Login extends AppCompatActivity {
             indicatorLogin.setVisibility(View.GONE);
             indicatorSignup.setVisibility(View.VISIBLE);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (backpressTime + 2000 > System.currentTimeMillis()) {
+            super.onBackPressed();
+            return;
+        }
+        else {
+            Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show();
+        }
+        backpressTime = System.currentTimeMillis();
     }
 }
