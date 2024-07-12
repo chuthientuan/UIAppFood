@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.objects;
 
 import java.util.ArrayList;
 import java.util.List;

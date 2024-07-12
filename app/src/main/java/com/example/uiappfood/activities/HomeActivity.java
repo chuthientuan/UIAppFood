@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.uiappfood.Item_food;
+import com.example.uiappfood.objects.Item_food;
 import com.example.uiappfood.network.NetworkUtil;
 import com.example.uiappfood.R;
 import com.example.uiappfood.adapter.AdapterFood;

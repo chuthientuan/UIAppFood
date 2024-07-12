@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.uiappfood.activities.InfoFoodActivity;
-import com.example.uiappfood.Item_food;
+import com.example.uiappfood.objects.Item_food;
 import com.example.uiappfood.R;
 
 import java.util.List;

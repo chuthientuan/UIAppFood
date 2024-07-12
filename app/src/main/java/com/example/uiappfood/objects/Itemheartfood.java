@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.objects;
 
 public class Itemheartfood {
     private int img;

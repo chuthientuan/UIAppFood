@@ -10,8 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.uiappfood.FavoritesManager;
-import com.example.uiappfood.Itemheartfood;
+import com.example.uiappfood.objects.FavoritesManager;
+import com.example.uiappfood.objects.Itemheartfood;
 import com.example.uiappfood.R;
 import com.example.uiappfood.adapter.AdapterHeart;
 

@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.uiappfood.Itemheartfood;
+import com.example.uiappfood.objects.Itemheartfood;
 import com.example.uiappfood.R;
 
 import java.util.List;
