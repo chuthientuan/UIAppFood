@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.adapter;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.uiappfood.Itemheartfood;
+import com.example.uiappfood.R;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.network;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

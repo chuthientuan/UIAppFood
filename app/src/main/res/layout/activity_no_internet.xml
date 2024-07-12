@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="#F5F5F8"
     android:gravity="center"
-    tools:context=".NoInternetActivity">
+    tools:context=".activities.NoInternetActivity">
 
     <ImageView
         android:layout_width="133.29dp"

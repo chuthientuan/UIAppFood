@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +10,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.uiappfood.activities.InfoFoodActivity;
+import com.example.uiappfood.Item_food;
+import com.example.uiappfood.R;
 
 import java.util.List;
 

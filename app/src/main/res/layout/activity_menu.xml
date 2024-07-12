@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="#FA4A0C"
-    tools:context=".MenuActivity">
+    tools:context=".activities.MenuActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

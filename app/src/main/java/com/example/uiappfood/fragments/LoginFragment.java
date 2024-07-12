@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.uiappfood.database.DatabaseHelper;
+import com.example.uiappfood.R;
+import com.example.uiappfood.activities.ForgotPasswordActivity;
+import com.example.uiappfood.activities.HomeActivity;
 
 public class LoginFragment extends Fragment {
     public Button btnlogin;

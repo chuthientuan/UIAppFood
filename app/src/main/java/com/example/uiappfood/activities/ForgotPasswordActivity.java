@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.activities;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -11,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.uiappfood.database.DatabaseHelper;
+import com.example.uiappfood.R;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
     Toolbar icon_back_forgot;

@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.activities;
 
 import android.os.Bundle;
 import android.widget.ListView;
@@ -9,6 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.uiappfood.FavoritesManager;
+import com.example.uiappfood.Itemheartfood;
+import com.example.uiappfood.R;
+import com.example.uiappfood.adapter.AdapterHeart;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,10 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.uiappfood.Item_food;
+import com.example.uiappfood.network.NetworkUtil;
+import com.example.uiappfood.R;
+import com.example.uiappfood.adapter.AdapterFood;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;

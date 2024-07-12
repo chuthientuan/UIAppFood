@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.database;
 
 import android.content.ContentValues;
 import android.content.Context;

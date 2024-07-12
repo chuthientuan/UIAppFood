@@ -1,4 +1,4 @@
-package com.example.uiappfood;
+package com.example.uiappfood.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.uiappfood.FavoritesManager;
+import com.example.uiappfood.Itemheartfood;
+import com.example.uiappfood.network.NetworkUtil;
+import com.example.uiappfood.R;
 
 public class InfoFoodActivity extends AppCompatActivity {
     ImageView imginfoitem;

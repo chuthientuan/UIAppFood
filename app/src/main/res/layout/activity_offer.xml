@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F5F5F8"
-    tools:context=".OfferActivity">
+    tools:context=".activities.OfferActivity">
 
     <Toolbar
         android:id="@+id/icon_back_offer"

@@ -1,7 +1,8 @@
-package com.example.uiappfood;
+package com.example.uiappfood.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -10,24 +11,26 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class OfferActivity extends AppCompatActivity {
-    Toolbar icon_back_offer;
+import com.example.uiappfood.R;
+
+public class ProfileHomeActivity extends AppCompatActivity {
+    Toolbar usback;
+    RadioGroup idgroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_offer);
+        setContentView(R.layout.activity_profile_home);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        icon_back_offer = findViewById(R.id.icon_back_offer);
-        icon_back_offer.setNavigationOnClickListener(v -> finish());
-        // Check Internet
-        if(!NetworkUtil.isNetworkAvailable(this)) {
-            Intent intent = new Intent(this, NoInternetActivity.class);
-            startActivity(intent);
-        }
+        usback = findViewById(R.id.usback);
+        usback.setNavigationOnClickListener(v -> finish());
+        idgroup = findViewById(R.id.idgroup);
+        idgroup.setOnCheckedChangeListener((group, checkedId) -> {
+            RadioButton radioButton = findViewById(checkedId);
+        });
     }
 }
