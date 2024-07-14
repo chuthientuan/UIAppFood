@@ -1,5 +1,6 @@
 package com.example.uiappfood.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.Toolbar;
@@ -10,6 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.uiappfood.network.NetworkUtil;
 import com.example.uiappfood.objects.FavoritesManager;
 import com.example.uiappfood.objects.Itemheartfood;
 import com.example.uiappfood.R;
@@ -38,5 +40,10 @@ public class FavoritesListActivity extends AppCompatActivity {
         listviewfavorite.setAdapter(adp);
         icon_back_item = findViewById(R.id.icon_back_item);
         icon_back_item.setNavigationOnClickListener(v -> finish());
+        //Check Internet
+        if (!NetworkUtil.isNetworkAvailable(this)) {
+            Intent intent = new Intent(this, NoInternetActivity.class);
+            startActivity(intent);
+        }
     }
 }

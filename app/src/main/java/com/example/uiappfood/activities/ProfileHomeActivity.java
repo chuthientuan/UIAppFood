@@ -1,5 +1,6 @@
 package com.example.uiappfood.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -12,6 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.uiappfood.R;
+import com.example.uiappfood.network.NetworkUtil;
 
 public class ProfileHomeActivity extends AppCompatActivity {
     Toolbar usback;
@@ -32,5 +34,10 @@ public class ProfileHomeActivity extends AppCompatActivity {
         idgroup.setOnCheckedChangeListener((group, checkedId) -> {
             RadioButton radioButton = findViewById(checkedId);
         });
+        //Check Internet
+        if (!NetworkUtil.isNetworkAvailable(this)) {
+            Intent intent = new Intent(this, NoInternetActivity.class);
+            startActivity(intent);
+        }
     }
 }

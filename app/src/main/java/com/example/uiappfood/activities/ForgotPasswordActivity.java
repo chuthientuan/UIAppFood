@@ -1,5 +1,6 @@
 package com.example.uiappfood.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.uiappfood.database.DatabaseHelper;
 import com.example.uiappfood.R;
+import com.example.uiappfood.network.NetworkUtil;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
     Toolbar icon_back_forgot;
@@ -63,5 +65,10 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 Toast.makeText(ForgotPasswordActivity.this , "Failed to update password", Toast.LENGTH_SHORT).show();
             }
         });
+        //Check Internet
+        if (!NetworkUtil.isNetworkAvailable(this)) {
+            Intent intent = new Intent(this, NoInternetActivity.class);
+            startActivity(intent);
+        }
     }
 }
